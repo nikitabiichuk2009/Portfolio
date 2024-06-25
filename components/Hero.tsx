@@ -66,7 +66,7 @@ const Hero = () => {
             A {age}-year old teeneger who loves coding.
           </h2>
           <TextGenerateEffect
-            className="text-3xl md:text-5xl"
+            className="text-3xl md:text-5xl text-center"
             words="Nikita Biichuk's Portfolio"
             numberForColor={1}
           />

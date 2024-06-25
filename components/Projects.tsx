@@ -67,7 +67,7 @@ const Projects = () => {
                       href={link}
                       className="inline-flex items-center gap-1 hover:text-slate-300 transition-colors ease-in-out duration-300"
                     >
-                      View on <span className="font-semibold">GitHub</span>
+                      <span className="font-semibold">View</span>
                       <FaLocationArrow className="ml-1" color="#CBACF9" />
                     </Link>
                   </div>

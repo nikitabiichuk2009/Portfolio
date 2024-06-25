@@ -133,11 +133,7 @@ export default function About() {
           description={`Hi, I'm Nikita, a ${age}-year-old web developer. I finished 9 grades at school. I have been wrestling for 8 years, which has taught me discipline and perseverance. My hobbies include mountain biking, reading, and gaming. I’m known for being responsible, kind, and dedicated, always striving to give my best in everything I do.`}
           icon={<AceternityIcon title={"Personal info"} />}
         >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
+          <CanvasRevealEffect containerClassName="bg-sky-600" />
         </Card>
       </div>
     </section>

@@ -111,7 +111,7 @@ export function ContactForm() {
           <Label htmlFor="phone">Phone Number</Label>
           <Input
             id="phone"
-            placeholder="+ (Automatically included, type only numbers) 380506096474"
+            placeholder="+ Automatically included, type only numbers"
             type="number"
             required
             min={7}
