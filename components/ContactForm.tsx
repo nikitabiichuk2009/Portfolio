@@ -111,11 +111,11 @@ export function ContactForm() {
           <Label htmlFor="phone">Phone Number</Label>
           <Input
             id="phone"
-            placeholder="+380506096474"
-            type="tel"
+            placeholder="+ (Automatically included, type only numbers) 380506096474"
+            type="number"
             required
-            minLength={7}
-            maxLength={20}
+            min={7}
+            max={20}
             value={formData.phone}
             onChange={handleChange}
           />
