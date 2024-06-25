@@ -13,19 +13,19 @@ const Projects = () => {
         words="A small selection of Top Projects"
         numberForColor={3}
       />
-      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-32 lg:gap-y-12 mt-14">
+      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-20 lg:gap-y-16 mt-14">
         {projects.map(({ id, title, des, img, iconLists, link }) => {
           return (
             <div
               key={id}
               className="lg:min-h-[32.5rem] h-[25rem] flex 
-              items-center justify-center sm:w-[570px] w-[80vw]"
+              items-center justify-center sm:w-[420px] w-[80vw]"
             >
               <PinContainer title={link} href={link}>
                 <div
                   className="flex justify-center items-center
-                 relative sm:w-[570px] w-[80vw] 
-                 overflow-hidden h-[30vh] mb-10"
+                 relative sm:w-[420px] w-[80vw]
+                 overflow-hidden h-[25vh] lg:h-[32.5vh] mb-10"
                 >
                   <div className="relative w-full h-full rounded-3xl overflow-hidden bg-[#13162D">
                     <img src="/assets/bg.png" alt="bg image" />
