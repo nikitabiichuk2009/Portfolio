@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import MyWorkExperience from "@/components/MyWorkExperience";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/NavBar";
 import { CgWebsite } from "react-icons/cg";
@@ -25,6 +26,7 @@ export default function Home() {
         />
         <Hero />
         <About />
+        <MyWorkExperience />
         <Projects />
         <Footer />
       </div>
