@@ -24,7 +24,7 @@ export default function About() {
 
   const age = calculateAge("2009-06-30");
   return (
-    <section id="about" className="w-full py-36">
+    <section id="about" className="w-full py-32">
       <TextGenerateEffect
         className="text-3xl md:text-5xl text-center"
         words="About me"
