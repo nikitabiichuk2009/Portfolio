@@ -114,8 +114,6 @@ export function ContactForm() {
             placeholder="+ Automatically included, type only numbers"
             type="number"
             required
-            min={7}
-            max={20}
             value={formData.phone}
             onChange={handleChange}
           />
