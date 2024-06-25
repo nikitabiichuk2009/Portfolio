@@ -67,7 +67,7 @@ const Projects = () => {
                       href={link}
                       className="inline-flex items-center gap-1 hover:text-slate-300 transition-colors ease-in-out duration-300"
                     >
-                      <p className="text-sm text-nowrap md:text-lg">
+                      <p className="text-xs sm:text-sm text-nowrap md:text-lg">
                         View on <span className="font-semibold">GitHub</span>
                       </p>
                       <FaLocationArrow className="ml-1" color="#CBACF9" />
