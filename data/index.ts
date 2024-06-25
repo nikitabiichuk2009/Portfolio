@@ -79,7 +79,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Zoom Clone - Video Conferencing App",
+    title: "Zoom Clone",
     des: "Simplify your video conferencing experience with Zoom Clone. Seamlessly connect with colleagues and friends.",
     img: "/assets/zoom.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],

@@ -18,7 +18,7 @@ const Projects = () => {
           return (
             <div
               key={id}
-              className="lg:min-h-[32.5rem] h-[25rem] flex 
+              className="lg:h-[32.5rem] h-[25rem] flex 
               items-center justify-center sm:w-96 w-[80vw]"
             >
               <PinContainer title={link} href={link}>
@@ -67,8 +67,7 @@ const Projects = () => {
                       href={link}
                       className="inline-flex items-center gap-1 hover:text-slate-300 transition-colors ease-in-out duration-300"
                     >
-                      View Project on{" "}
-                      <span className="font-semibold">GitHub</span>
+                      View on <span className="font-semibold">GitHub</span>
                       <FaLocationArrow className="ml-1" color="#CBACF9" />
                     </Link>
                   </div>
