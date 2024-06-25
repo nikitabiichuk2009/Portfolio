@@ -13,19 +13,19 @@ const Projects = () => {
         words="A small selection of Top Projects"
         numberForColor={3}
       />
-      <div className="flex flex-wrap items-center justify-center gap-24 mt-14">
+      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-32 lg:gap-y-12 mt-14">
         {projects.map(({ id, title, des, img, iconLists, link }) => {
           return (
             <div
               key={id}
-              className="lg:h-[32.5rem] h-[25rem] flex 
-              items-center justify-center sm:w-96 w-[80vw]"
+              className="lg:min-h-[32.5rem] h-[25rem] flex 
+              items-center justify-center sm:w-[570px] w-[80vw]"
             >
               <PinContainer title={link} href={link}>
                 <div
                   className="flex justify-center items-center
-                 relative sm:w-96 w-[80vw] 
-                 overflow-hidden h-[30vh] lg:h-[40vh] mb-10"
+                 relative sm:w-[570px] w-[80vw] 
+                 overflow-hidden h-[30vh] mb-10"
                 >
                   <div className="relative w-full h-full rounded-3xl overflow-hidden bg-[#13162D">
                     <img src="/assets/bg.png" alt="bg image" />
@@ -51,7 +51,7 @@ const Projects = () => {
                         <div
                           key={icon}
                           className="border border-white/[0.2] rounded-full bg-black 
-                          lg:w-10 lg:h-10 h-8 w-8 flex justify-center items-center"
+                        lg:w-10 lg:h-10 h-8 w-8 flex justify-center items-center"
                         >
                           <img
                             src={`/assets/${icon}`}
@@ -67,7 +67,9 @@ const Projects = () => {
                       href={link}
                       className="inline-flex items-center gap-1 hover:text-slate-300 transition-colors ease-in-out duration-300"
                     >
-                      <span className="font-semibold">View</span>
+                      <p className="text-sm md:text-lg">
+                        View on <span className="font-semibold">GitHub</span>
+                      </p>
                       <FaLocationArrow className="ml-1" color="#CBACF9" />
                     </Link>
                   </div>
