@@ -20,7 +20,7 @@ const Footer = () => {
             Reach out to me today and let&apos;s discuss how I can help you!
           </p>
           <ContactForm />
-          <div className="flex mt-5 md:flex-row flex-col justify-between items-center gap-3 md:gap-2">
+          <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-4 md:gap-2">
             <p className="font-normal text-sm">
               Copyright © {new Date().getFullYear()} Nikita Biichuk
             </p>

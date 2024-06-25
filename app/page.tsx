@@ -26,7 +26,9 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
-        <Footer />
+        <div className="mb-12">
+          <Footer />
+        </div>
       </div>
     </main>
   );
