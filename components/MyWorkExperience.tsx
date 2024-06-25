@@ -5,7 +5,7 @@ import { Button } from "./ui/MovingBorder";
 
 const MyWorkExperience = () => {
   return (
-    <div className="py-20">
+    <div className="pb-20">
       <TextGenerateEffect
         className="text-3xl md:text-5xl text-center"
         words="My Work Experience"

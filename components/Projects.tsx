@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full py-20">
+    <section id="projects" className="w-full py-36">
       <TextGenerateEffect
         className="text-3xl md:text-5xl text-center"
         words="A small selection of Top Projects"
