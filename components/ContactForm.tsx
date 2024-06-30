@@ -75,7 +75,9 @@ export function ContactForm() {
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
+            <Label htmlFor="firstname" className="cursor-text select-text">
+              First name
+            </Label>
             <Input
               id="firstname"
               placeholder="Tyler"
@@ -88,7 +90,9 @@ export function ContactForm() {
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
+            <Label htmlFor="lastname" className="cursor-text select-text">
+              Last name
+            </Label>
             <Input
               id="lastname"
               placeholder="Durden"
@@ -102,7 +106,9 @@ export function ContactForm() {
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email Address</Label>
+          <Label htmlFor="email" className="cursor-text select-text">
+            Email Address
+          </Label>
           <Input
             id="email"
             placeholder="examplemail@gmail.com"
@@ -112,7 +118,9 @@ export function ContactForm() {
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="phone">Phone Number</Label>
+          <Label htmlFor="phone" className="cursor-text select-text">
+            Phone Number
+          </Label>
           <Input
             id="phone"
             placeholder="+ Automatically included, type only numbers"
@@ -123,7 +131,9 @@ export function ContactForm() {
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="message">Message</Label>
+          <Label htmlFor="message" className="select-text cursor-text">
+            Message
+          </Label>
           <Textarea
             id="message"
             rows={5}
@@ -140,7 +150,7 @@ export function ContactForm() {
           type="submit"
           disabled={loading}
         >
-          {loading ? "Sending..." : "Contact me &rarr"};
+          {loading ? "Sending..." : "Contact me →"}
           <BottomGradient />
         </button>
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />

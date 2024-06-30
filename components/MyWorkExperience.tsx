@@ -30,10 +30,10 @@ const MyWorkExperience = () => {
                   className="lg:w-12 md:w-20 w-16"
                 />
                 <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                  <h1 className="text-start text-xl md:text-2xl font-bold cursor-text select-text">
                     {exp.title}
                   </h1>
-                  <p className="text-start font-semibold text-white-100 mt-3">
+                  <p className="text-start font-semibold text-white-100 mt-3 cursor-text select-text">
                     {exp.desc}
                   </p>
                 </div>
