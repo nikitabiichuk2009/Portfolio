@@ -30,12 +30,12 @@ export async function sendEmail({
     subject: "New Contact Form Submission",
     text: `You have received a message from ${firstname} ${lastname}.
            Email: ${email}
-           Phone: +${phone}
+           Phone: ${phone}
            Message: ${message}
            Please contact him/her.`,
     html: `<p>You have received a message from <strong>${firstname} ${lastname}</strong>.</p>
            <p><strong>Email:</strong> ${email}</p>
-           <p><strong>Phone:</strong> +${phone}</p>
+           <p><strong>Phone:</strong> ${phone}</p>
            <p><strong>Message:</strong> ${message}</p>
            <p>Please contact him/her.</p>`,
   };

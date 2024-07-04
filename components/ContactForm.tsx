@@ -6,6 +6,7 @@ import { cn } from "@/utils/cn";
 import { sendEmail } from "@/actions/sendEmail.action";
 import { Textarea } from "./ui/TextArea";
 import { useToast } from "./ui/use-toast";
+import { PhoneInput } from "./ui/PhoneInput";
 
 interface FormData {
   firstname: string;
@@ -31,6 +32,10 @@ export function ContactForm() {
   ) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
+  };
+
+  const handlePhoneChange = (value: string) => {
+    setFormData({ ...formData, phone: value });
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -121,13 +126,11 @@ export function ContactForm() {
           <Label htmlFor="phone" className="cursor-text select-text">
             Phone Number
           </Label>
-          <Input
+          <PhoneInput
             id="phone"
-            placeholder="+ Automatically included, type only numbers"
-            type="number"
             required
             value={formData.phone}
-            onChange={handleChange}
+            onChange={handlePhoneChange}
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
