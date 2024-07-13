@@ -22,10 +22,13 @@ const calculateAge = (birthDate: string) => {
 };
 
 const age = calculateAge("2009-06-30");
-const desc = `A ${age}-year old teenegar that can make mind-blowing tech stuff.`;
+const desc = `A ${age}-year old web developer.`;
 export const metadata: Metadata = {
-  title: "Nikita's Portfolio",
+  title: "Nikita Biichuk's Portfolio",
   description: desc,
+  icons: {
+    icon: "/avatar.png",
+  },
 };
 
 export default function RootLayout({

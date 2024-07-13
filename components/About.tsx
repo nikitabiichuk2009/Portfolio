@@ -66,7 +66,7 @@ export default function About() {
             <div className="flex flex-col">
               <p className="text-sm font-medium mb-3">
                 <span className="text-xl font-bold">Current Education:</span>{" "}
-                Currently a high school student with a strong interest web
+                Currently a high school student with a strong interest in web
                 development.
               </p>
               <p className="text-sm font-medium mb-3">
