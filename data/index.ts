@@ -79,6 +79,20 @@ export const projects = [
   },
   {
     id: 2,
+    title: "CarePulse",
+    des: "Carepulse - a healthcare platform that streamlines patient registration, appointment scheduling, and medical records.",
+    img: "/assets/carepulse.png",
+    iconLists: [
+      "/next.svg",
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongo-icon.svg",
+    ],
+    link: "https://github.com/nikitabiichuk2009/Real-life-website-healt-care",
+  },
+  {
+    id: 3,
     title: "Threads clone",
     des: "The Threads Clone project replicates the key features of the Threads app, including user authentication, profile management, post creation, commenting, and community interactions. It provides a platform for users to share content, engage in discussions, and connect with communities.",
     img: "/assets/threads.png",
@@ -92,7 +106,7 @@ export const projects = [
     link: "https://github.com/nikitabiichuk2009/threads_nextjs",
   },
   {
-    id: 3,
+    id: 4,
     title: "Zoom Clone",
     des: "Simplify your video conferencing experience with Zoom Clone. Seamlessly connect with colleagues and friends.",
     img: "/assets/zoom.png",
@@ -100,7 +114,7 @@ export const projects = [
     link: "https://github.com/nikitabiichuk2009/zoom_clone",
   },
   {
-    id: 4,
+    id: 5,
     title: "Flight Finding Website",
     des: "Is this hard for you to find a flight? If so, this application is definitely for you!",
     img: "/assets/flight.png",
@@ -108,7 +122,7 @@ export const projects = [
     link: "https://github.com/nikitabiichuk2009/Flight-finding",
   },
   {
-    id: 5,
+    id: 6,
     title: "Modern Hoobank Website",
     des: "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.",
     img: "/assets/hoobank.png",
