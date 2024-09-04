@@ -201,7 +201,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Full Stack Web Developer",
-    desc: "April 2024 - Current Time. Already worked with 4 big different projects.",
+    desc: "April 2024 - Current Time. Already worked with 5 big different projects.",
     className: "md:col-span-2",
     thumbnail: "/assets/exp1.svg",
   },

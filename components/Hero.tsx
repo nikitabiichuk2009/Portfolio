@@ -63,7 +63,7 @@ const Hero = () => {
             />
           </div>
           <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 text-center">
-            A {age}-year old teeneger who loves coding.
+            A {age}-year old boy who loves coding.
           </h2>
           <TextGenerateEffect
             className="text-3xl md:text-5xl text-center"

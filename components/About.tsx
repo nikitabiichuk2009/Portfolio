@@ -37,9 +37,10 @@ export default function About() {
             <div className="flex flex-col gap-4">
               <p className="text-sm font-medium">
                 <span className="text-xl font-bold">Tech stack:</span> HTML,
-                CSS, JavaScript, TypeScript, React.js, Node.js, Express.js,
-                Mongo_DB, PostgreSQL, Prisma, APIs, Next.js, YAML, UNIT Tests,
-                Python, Flask.
+                CSS, JavaScript, TailwindCSS, ShadCn, ChakraUI, TypeScript,
+                React.js, Node.js, Phaser, Express.js, Mongo_DB, PostgreSQL,
+                Prisma, APIs, Next.js, YAML, UNIT Tests, Python, Flask, C#,
+                Unity-2D.
               </p>
               <p className="text-sm font-medium">
                 <span className="text-xl font-bold">Teamwork:</span> Experience
