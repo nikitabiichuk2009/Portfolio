@@ -143,7 +143,7 @@ export function ContactForm() {
             required
             placeholder="Your message"
             minLength={10}
-            maxLength={100}
+            maxLength={1000}
             value={formData.message}
             onChange={handleChange}
           />
