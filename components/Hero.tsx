@@ -29,6 +29,7 @@ const Hero = () => {
   };
 
   const age = calculateAge("2009-06-30");
+  
   return (
     <div className="pb-20 pt-36">
       <div>
