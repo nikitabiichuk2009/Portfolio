@@ -87,7 +87,7 @@ export default function About() {
               </p>
               <p className="text-sm font-medium mb-3">
                 <LinkPreview
-                  url="https://framer.com/motion"
+                  url="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
                   isStatic={true}
                   imageSrc="/web-dev-course-with-angela.png"
                 >
