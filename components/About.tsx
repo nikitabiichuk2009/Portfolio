@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
+import { LinkPreview } from "./ui/link-preview";
 
 export default function About() {
   const calculateAge = (birthDate: string) => {
@@ -74,44 +75,44 @@ export default function About() {
                 <span className="text-xl font-bold">Certifications:</span>
               </p>
               <p className="text-sm font-medium mb-3">
-                <Link
-                  href="https://www.udemy.com/course/100-days-of-code/"
-                  passHref
+                <LinkPreview
+                  url="https://www.udemy.com/course/100-days-of-code"
+                  isStatic={true}
+                  imageSrc="/python-course-with-angela.png"
                 >
                   <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
                     100 Days of Code: The Complete Python Pro Bootcamp for 2023
                   </span>
-                </Link>
+                </LinkPreview>
               </p>
               <p className="text-sm font-medium mb-3">
-                <Link
-                  href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
-                  passHref
+                <LinkPreview
+                  url="https://framer.com/motion"
+                  isStatic={true}
+                  imageSrc="/web-dev-course-with-angela.png"
                 >
                   <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
                     The Complete 2023 Web Development Bootcamp{" "}
                   </span>
-                </Link>
+                </LinkPreview>
               </p>
               <p className="text-sm font-medium mb-3">
-                <Link
-                  href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
-                  passHref
+                <LinkPreview
+                  url="https://www.udemy.com/course/react-the-complete-guide-incl-redux"
+                  isStatic={true}
+                  imageSrc="/react-course.png"
                 >
                   <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
                     React - The Complete Guide (incl Hooks, React Router, Redux)
                   </span>
-                </Link>
+                </LinkPreview>
               </p>
               <p className="text-sm font-medium mb-3">
-                <Link
-                  href="https://www.jsmastery.pro/ultimate-next-course"
-                  passHref
-                >
+                <LinkPreview url="https://www.jsmastery.pro/ultimate-next-course">
                   <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
                     The Ultimate Next.js Course
                   </span>
-                </Link>
+                </LinkPreview>
               </p>
             </div>
           }
