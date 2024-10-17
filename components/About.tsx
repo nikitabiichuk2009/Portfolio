@@ -72,7 +72,7 @@ export default function About() {
                 development.
               </p>
               <p className="text-sm font-medium mb-3">
-                <span className="text-xl font-bold">Certifications:</span>
+                <span className="text-xl font-bold">Completed courses:</span>
               </p>
               <p className="text-sm font-medium mb-3">
                 <LinkPreview
