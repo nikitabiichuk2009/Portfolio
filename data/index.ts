@@ -242,6 +242,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/twit.svg",
-    link: "https://x.com/niktestpython",
+    link: "https://x.com/nikitabiichuk",
   },
 ];
