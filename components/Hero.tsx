@@ -3,9 +3,9 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image";
-import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { Cover } from "./ui/cover";
+import SeeMyWorkButton from "./ui/SeeMyWorkButton";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -75,7 +75,7 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-lg font-normal text-white">
             Hi! I am Nikita, a full stack web developer based in Ukraine.
           </p>
-          <MagicButton
+          <SeeMyWorkButton
             title="See my work"
             onClick={scrollToProjects}
             icon={<FaLocationArrow />}
