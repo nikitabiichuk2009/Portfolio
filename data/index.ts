@@ -89,7 +89,7 @@ export const projects = [
       "/ts.svg",
       "/mongo-icon.svg",
     ],
-    link: "https://github.com/nikitabiichuk2009/Events_Management_Platform",
+    link: "https://github.com/nikitabiichuk2009/Real-life-website-healt-care",
   },
   {
     id: 3,
@@ -104,7 +104,7 @@ export const projects = [
       "/ts.svg",
       "/mongo-icon.svg",
     ],
-    link: "https://github.com/nikitabiichuk2009/Real-life-website-healt-care",
+    link: "https://github.com/nikitabiichuk2009/Events_Management_Platform",
   },
   {
     id: 4,
