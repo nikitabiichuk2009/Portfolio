@@ -81,7 +81,7 @@ export const projects = [
     id: 2,
     title: "CarePulse",
     des: "Carepulse - a healthcare platform that streamlines patient registration, appointment scheduling, and medical records.",
-    img: "/assets/evently-app.png",
+    img: "/assets/carepulse.png",
     iconLists: [
       "/next.svg",
       "/re.svg",
@@ -96,7 +96,7 @@ export const projects = [
     title: "Evently - Your Ultimate Event Management Platform",
     description:
       "Evently is your go-to platform for creating, managing, and promoting events. Whether you're an experienced event planner or a first-time organizer, Evently simplifies the process and helps you connect with attendees effortlessly.",
-    img: "/assets/eventlya-app.png",
+    img: "/assets/evently-app.png",
     iconLists: [
       "/next.svg",
       "/re.svg",
