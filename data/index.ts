@@ -81,7 +81,7 @@ export const projects = [
     id: 2,
     title: "CarePulse",
     des: "Carepulse - a healthcare platform that streamlines patient registration, appointment scheduling, and medical records.",
-    img: "/assets/carepulse.png",
+    img: "/assets/evently-app.png",
     iconLists: [
       "/next.svg",
       "/re.svg",
