@@ -89,7 +89,7 @@ export const projects = [
       "/ts.svg",
       "/mongo-icon.svg",
     ],
-    link: "https://github.com/nikitabiichuk2009/EventPlatform",
+    link: "https://github.com/nikitabiichuk2009/Events_Management_Platform",
   },
   {
     id: 3,
