@@ -89,10 +89,25 @@ export const projects = [
       "/ts.svg",
       "/mongo-icon.svg",
     ],
-    link: "https://github.com/nikitabiichuk2009/Real-life-website-healt-care",
+    link: "https://github.com/nikitabiichuk2009/EventPlatform",
   },
   {
     id: 3,
+    title: "Evently - Your Ultimate Event Management Platform",
+    description:
+      "Evently is your go-to platform for creating, managing, and promoting events. Whether you're an experienced event planner or a first-time organizer, Evently simplifies the process and helps you connect with attendees effortlessly.",
+    img: "/assets/eventlya-app.png",
+    iconLists: [
+      "/next.svg",
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongo-icon.svg",
+    ],
+    link: "https://github.com/nikitabiichuk2009/Real-life-website-healt-care",
+  },
+  {
+    id: 4,
     title: "Threads clone",
     des: "The Threads Clone project replicates the key features of the Threads app, including user authentication, profile management, post creation, commenting, and community interactions. It provides a platform for users to share content, engage in discussions, and connect with communities.",
     img: "/assets/threads.png",
@@ -106,7 +121,7 @@ export const projects = [
     link: "https://github.com/nikitabiichuk2009/threads_nextjs",
   },
   {
-    id: 4,
+    id: 5,
     title: "Zoom Clone",
     des: "Simplify your video conferencing experience with Zoom Clone. Seamlessly connect with colleagues and friends.",
     img: "/assets/zoom.png",
@@ -114,7 +129,7 @@ export const projects = [
     link: "https://github.com/nikitabiichuk2009/zoom_clone",
   },
   {
-    id: 5,
+    id: 6,
     title: "Flight Finding Website",
     des: "Is this hard for you to find a flight? If so, this application is definitely for you!",
     img: "/assets/flight.png",
@@ -122,7 +137,7 @@ export const projects = [
     link: "https://github.com/nikitabiichuk2009/Flight-finding",
   },
   {
-    id: 6,
+    id: 7,
     title: "Modern Hoobank Website",
     des: "With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.",
     img: "/assets/hoobank.png",
