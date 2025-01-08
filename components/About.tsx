@@ -3,8 +3,6 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import Link from "next/link";
 import { LinkPreview } from "./ui/link-preview";
 
 export default function About() {
@@ -25,12 +23,11 @@ export default function About() {
 
   const age = calculateAge("2009-06-30");
   return (
-    <section id="about" className="w-full pt-44 md:pt-32">
-      <TextGenerateEffect
-        className="text-3xl md:text-5xl text-center"
-        words="About me"
-        numberForColor={0}
-      />
+    <section id="about" className="w-full mt-44 pt-32">
+      <h1 className="text-3xl md:text-5xl text-center text-white font-bold">
+        About <span className="text-purple">me</span>
+      </h1>
+
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-4">
         <Card
           title="My skills"

@@ -1,5 +1,4 @@
 import React from "react";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { ContactForm } from "./ContactForm";
 import { socialMedia } from "@/data";
 import Link from "next/link";
@@ -14,11 +13,9 @@ const Footer = () => {
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="flex flex-col lg:max-w-[45vw] relative z-10">
-          <TextGenerateEffect
-            className="text-3xl md:text-5xl text-center"
-            words="So Let's Work Together!"
-            numberForColor={2}
-          />
+          <h1 className="text-3xl md:text-5xl text-center text-white font-bold">
+            So Let&apos;s Work <span className="text-purple">Together!</span>
+          </h1>
           <p className="text-white-200 md:mt-10 my-5 text-center">
             Reach out to me today and let&apos;s discuss how I can help you!
           </p>
@@ -37,8 +34,7 @@ const Footer = () => {
                     <Link href={link.link}>
                       <img
                         src={`/assets${link.img}`}
-                        w-20
-                        h-20
+                        className="w-20 h-20"
                         alt="social media icon"
                       />
                     </Link>

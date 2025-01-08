@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
 import { Cover } from "./ui/cover";
@@ -67,11 +66,9 @@ const Hero = () => {
           <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 text-center">
             A {age}-year old boy who loves <Cover className="text-sm">coding</Cover>
           </h2>
-          <TextGenerateEffect
-            className="text-3xl md:text-5xl text-center"
-            words="Nikita Biichuk's Portfolio"
-            numberForColor={1}
-          />
+          <h1 className="text-3xl md:text-5xl text-center text-white font-bold">
+            <span className="text-purple">Nikita Biichuk&apos;s</span> Portfolio
+          </h1>
           <p className="text-center md:tracking-wider mb-4 text-lg font-normal text-white">
             Hi! I am Nikita, a full stack web developer based in Ukraine.
           </p>

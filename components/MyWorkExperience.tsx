@@ -1,16 +1,13 @@
 import React from "react";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorder";
 
 const MyWorkExperience = () => {
   return (
     <div className="pb-20">
-      <TextGenerateEffect
-        className="text-3xl md:text-5xl text-center"
-        words="My Work Experience"
-        numberForColor={0}
-      />
+      <h1 className="text-3xl md:text-5xl text-center font-bold text-white">
+        My <span className="text-purple">Work Experience</span>
+      </h1>
       <div className="w-full mt-12 flex items-center justify-center">
         {workExperience.map((exp) => {
           return (

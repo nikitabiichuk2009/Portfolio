@@ -1,5 +1,4 @@
 import React from "react";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/PinContainer";
 import { FaLocationArrow } from "react-icons/fa";
@@ -8,11 +7,9 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <section id="projects" className="w-full py-36">
-      <TextGenerateEffect
-        className="text-3xl md:text-5xl text-center"
-        words="A small selection of Top Projects"
-        numberForColor={3}
-      />
+      <h1 className="text-3xl md:text-5xl text-center text-white font-bold">
+        A small selection of <span className="text-purple">Top Projects</span>
+      </h1>
       <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-20 lg:gap-y-16 mt-14">
         {projects.map(({ id, title, des, img, iconLists, link }) => {
           return (
