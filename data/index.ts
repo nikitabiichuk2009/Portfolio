@@ -94,8 +94,7 @@ export const projects = [
   {
     id: 3,
     title: "Evently - Your Ultimate Event Management Platform",
-    description:
-      "Evently is your go-to platform for creating, managing, and promoting events. Whether you're an experienced event planner or a first-time organizer, Evently simplifies the process and helps you connect with attendees effortlessly.",
+    des: "Evently is your go-to platform for creating, managing, and promoting events. Whether you're an experienced event planner or a first-time organizer, Evently simplifies the process and helps you connect with attendees effortlessly.",
     img: "/assets/evently-app.png",
     iconLists: [
       "/next.svg",
