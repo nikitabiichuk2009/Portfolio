@@ -29,6 +29,30 @@ export const metadata: Metadata = {
   icons: {
     icon: "/avatar.png",
   },
+  openGraph: {
+    title: "Nikita Biichuk's Portfolio",
+    description: desc,
+    url: "https://nikita-biichuks-portfolio.vercel.app",
+    siteName: "Nikita Biichuk's Dev Portfolio",
+    images: [
+      {
+        url: "/avatar.png",
+        alt: "Nikita Biichuk",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+  },
+  robots: "index, follow",
+  twitter: {
+    card: "summary_large_image",
+    site: "@nikitabiichuk",
+    creator: "@nikitabiichuk",
+    title: "Nikita Biichuk's Dev Portfolio",
+    description: desc,
+    images: ["/avatar.png"],
+  },
+  keywords: ["Nikita Biichuk", "Nikita Biichuk's Portfolio"],
 };
 
 export default function RootLayout({
