@@ -148,7 +148,7 @@ export const projects = [
     title: "Movie App",
     des: "A mobile application built with React Native and Expo Router, focusing on social connectivity and movie exploration. Features include authentication, movie discovery, personalized recommendations, and social interactions.",
     img: "/assets/movie-app.jng",
-    iconLists: ["/react-icon.svg", "/tailwind.svg", "/ts.svg", "/appwrite.svg"],
+    iconLists: ["/react1.svg", "/tail.svg", "/ts.svg", "/appwrite.svg"],
     link: "https://github.com/nikitabiichuk2009/movie-app",
   },
 ];
