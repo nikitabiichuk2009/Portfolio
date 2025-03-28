@@ -36,9 +36,9 @@ export default function About() {
               <p className="text-sm font-medium">
                 <span className="text-xl font-bold">Tech stack:</span> HTML,
                 CSS, JavaScript, TailwindCSS, ShadCn, ChakraUI, TypeScript,
-                React.js, Node.js, Phaser, Express.js, Mongo_DB, PostgreSQL,
-                Prisma, APIs, Next.js, YAML, UNIT Tests, Python, Flask, C#,
-                Unity-2D.
+                React.js, React Native, Appwrite, Node.js, Phaser, Express.js,
+                Mongo_DB, PostgreSQL, Prisma, APIs, Next.js, YAML, UNIT Tests,
+                Python, Flask, C#, Unity-2D.
               </p>
               <p className="text-sm font-medium">
                 <span className="text-xl font-bold">Teamwork:</span> Experience
