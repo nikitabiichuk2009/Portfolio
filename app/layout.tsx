@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: "Nikita Biichuk's Portfolio",
   description: desc,
   icons: {
-    icon: "/avatar.png",
+    icon: "/avatar.jpg",
   },
   openGraph: {
     title: "Nikita Biichuk's Portfolio",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Nikita Biichuk's Dev Portfolio",
     images: [
       {
-        url: "/avatar.png",
+        url: "/avatar.jpg",
         alt: "Nikita Biichuk",
       },
     ],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     creator: "@nikitabiichuk",
     title: "Nikita Biichuk's Dev Portfolio",
     description: desc,
-    images: ["/avatar.png"],
+    images: ["/avatar.jpg"],
   },
   keywords: ["Nikita Biichuk", "Nikita Biichuk's Portfolio"],
 };

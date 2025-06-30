@@ -56,7 +56,7 @@ const Hero = () => {
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w[60vw] flex flex-col justify-center items-center">
           <div className="size-44 md:size-48 lg:size-56 rounded-full overflow-hidden mb-6">
             <Image
-              src="/avatar.png"
+              src="/avatar.jpg"
               alt="Nikita Biichuk's photo"
               width={250}
               height={250}
