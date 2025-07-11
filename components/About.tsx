@@ -129,7 +129,7 @@ export default function About() {
         </Card>
         <Card
           title="Something personal about me"
-          description={`Hi, I'm Nikita, a ${age}-year-old web developer. I finished 9 grades at school. I have been wrestling for 8 years, which has taught me discipline and perseverance. My hobbies include mountain biking, reading, and gaming. I’m known for being responsible, kind, and dedicated, always striving to give my best in everything I do.`}
+          description={`Hi, I'm Nikita, a ${age}-year-old web developer. I finished 10 grades at school. I have been wrestling for 8 years, which has taught me discipline and perseverance. My hobbies include mountain biking, reading, and gaming. I’m known for being responsible, kind, and dedicated, always striving to give my best in everything I do.`}
           icon={<AceternityIcon title={"Personal info"} />}
         >
           <CanvasRevealEffect containerClassName="bg-sky-600" />
