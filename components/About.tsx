@@ -4,6 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { LinkPreview } from "./ui/link-preview";
+import { courses } from "@/data";
 
 export default function About() {
   const calculateAge = (birthDate: string) => {
@@ -71,46 +72,19 @@ export default function About() {
               <p className="text-sm font-medium mb-3">
                 <span className="text-xl font-bold">Completed courses:</span>
               </p>
-              <p className="text-sm font-medium mb-3">
-                <LinkPreview
-                  url="https://www.udemy.com/course/100-days-of-code"
-                  isStatic={true}
-                  imageSrc="/python-course-with-angela.png"
-                >
-                  <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
-                    100 Days of Code: The Complete Python Pro Bootcamp for 2023
-                  </span>
-                </LinkPreview>
-              </p>
-              <p className="text-sm font-medium mb-3">
-                <LinkPreview
-                  url="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
-                  isStatic={true}
-                  imageSrc="/web-dev-course-with-angela.png"
-                >
-                  <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
-                    The Complete 2023 Web Development Bootcamp{" "}
-                  </span>
-                </LinkPreview>
-              </p>
-              <p className="text-sm font-medium mb-3">
-                <LinkPreview
-                  url="https://www.udemy.com/course/react-the-complete-guide-incl-redux"
-                  isStatic={true}
-                  imageSrc="/react-course.png"
-                >
-                  <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
-                    React - The Complete Guide (incl Hooks, React Router, Redux)
-                  </span>
-                </LinkPreview>
-              </p>
-              <p className="text-sm font-medium mb-3">
-                <LinkPreview url="https://www.jsmastery.pro/ultimate-next-course">
-                  <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">
-                    The Ultimate Next.js Course
-                  </span>
-                </LinkPreview>
-              </p>
+              {courses.map((course) => (
+                <p key={course.id} className="text-sm font-medium mb-3">
+                  {course.imageSrc ? (
+                    <LinkPreview url={course.url} imageSrc={course.imageSrc} isStatic={true}>
+                      <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">{course.title}</span>
+                    </LinkPreview>
+                  ) : (
+                    <LinkPreview url={course.url}>
+                      <span className="text-blue-500 underline transition-colors duration-300 ease-in-out hover:text-blue-600">{course.title}</span>
+                    </LinkPreview>
+                  )}
+                </p>
+              ))}
             </div>
           }
           icon={<AceternityIcon title={"Education"} />}

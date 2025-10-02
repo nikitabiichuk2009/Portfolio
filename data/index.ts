@@ -62,6 +62,37 @@ export const gridItems = [
   },
 ];
 
+export const courses: { id: number; title: string; url: string; imageSrc?: string }[] = [
+  {
+    id: 1,
+    title: "100 Days of Code: The Complete Python Pro Bootcamp for 2023",
+    url: "https://www.udemy.com/course/100-days-of-code",
+    imageSrc: "/python-course-with-angela.png",
+  },
+  {
+    id: 2,
+    title: "The Complete 2023 Web Development Bootcamp",
+    url: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
+    imageSrc: "/web-dev-course-with-angela.png",
+  },
+  {
+    id: 3,
+    title: "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    url: "https://www.udemy.com/course/react-the-complete-guide-incl-redux",
+    imageSrc: "/react-course.png",
+  },
+  {
+    id: 4,
+    title: "The Ultimate Next.js Course",
+    url: "https://www.jsmastery.pro/ultimate-next-course",
+  },
+  {
+    id: 5,
+    title: "Unity Platformer Course",
+    url: "https://www.udemy.com/course/platformer-alexdev",
+    imageSrc: "/unity-platformer-course.png",
+  },
+];
 export const projects = [
   {
     id: 1,
@@ -223,7 +254,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Full Stack Web Developer",
-    desc: "April 2024 - Current Time. Already worked with 5 big different projects.",
+    desc: "April 2024 - Current Time. Already worked with 6 big different projects.",
     className: "md:col-span-2",
     thumbnail: "/assets/exp1.svg",
   },
