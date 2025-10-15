@@ -2,9 +2,10 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import Image from "next/image";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaDownload, FaLocationArrow } from "react-icons/fa";
 import { Cover } from "./ui/cover";
 import SeeMyWorkButton from "./ui/SeeMyWorkButton";
+import DonwloadCvButton from "./ui/donwnload-cv-button";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -28,8 +29,17 @@ const Hero = () => {
     return age;
   };
 
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/NikitaBiichukResume.pdf';
+    link.download = 'NikitaBiichukResume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const age = calculateAge("2009-06-30");
-  
+
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -72,12 +82,20 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-lg font-normal text-white">
             Hi! I am Nikita, a full stack web developer based in Ukraine.
           </p>
-          <SeeMyWorkButton
-            title="See my work"
-            onClick={scrollToProjects}
-            icon={<FaLocationArrow />}
-            position="right"
-          />
+          <div className="flex gap-4">
+            <SeeMyWorkButton
+              title="See my work"
+              onClick={scrollToProjects}
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+            <DonwloadCvButton
+              title="Download CV"
+              onClick={downloadCV}
+              icon={<FaDownload />}
+              position="right"
+            />
+          </div>
         </div>
       </div>
     </div>
