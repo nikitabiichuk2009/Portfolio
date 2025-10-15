@@ -2,10 +2,10 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import Image from "next/image";
-import { FaDownload, FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow, FaFilePdf } from "react-icons/fa";
 import { Cover } from "./ui/cover";
 import SeeMyWorkButton from "./ui/SeeMyWorkButton";
-import DownloadCvButton from "./ui/download-cv-button";
+import ViewCvButton from "./ui/view-cv-button";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -29,16 +29,11 @@ const Hero = () => {
     return age;
   };
 
-  const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/NikitaBiichukResume.pdf';
-    link.download = 'NikitaBiichukResume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const age = calculateAge("2009-06-30");
+
+  const checkCv = () => {
+    window.open("/NikitaBiichukResume.pdf", "_blank");
+  };
 
   return (
     <div className="pb-20 pt-36">
@@ -89,10 +84,10 @@ const Hero = () => {
               icon={<FaLocationArrow />}
               position="right"
             />
-            <DownloadCvButton
-              title="Download CV"
-              onClick={downloadCV}
-              icon={<FaDownload />}
+            <ViewCvButton
+              title="View CV"
+              onClick={checkCv}
+              icon={<FaFilePdf />}
               position="right"
             />
           </div>
