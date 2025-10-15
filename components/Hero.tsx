@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaDownload, FaLocationArrow } from "react-icons/fa";
 import { Cover } from "./ui/cover";
 import SeeMyWorkButton from "./ui/SeeMyWorkButton";
-import DonwloadCvButton from "./ui/donwnload-cv-button";
+import DownloadCvButton from "./ui/download-cv-button";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -89,7 +89,7 @@ const Hero = () => {
               icon={<FaLocationArrow />}
               position="right"
             />
-            <DonwloadCvButton
+            <DownloadCvButton
               title="Download CV"
               onClick={downloadCV}
               icon={<FaDownload />}

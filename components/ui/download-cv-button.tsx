@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const DonwloadCvButton = ({
+const DownloadCvButton = ({
   title,
   onClick,
   icon,
@@ -27,4 +27,4 @@ const DonwloadCvButton = ({
   );
 };
 
-export default DonwloadCvButton;
+export default DownloadCvButton;
