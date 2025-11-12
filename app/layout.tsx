@@ -6,53 +6,69 @@ import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const calculateAge = (birthDate: string) => {
-  const today = new Date();
-  const birthDateObj = new Date(birthDate);
-  let age = today.getFullYear() - birthDateObj.getFullYear();
-  const monthDifference = today.getMonth() - birthDateObj.getMonth();
+const description = "Nikita Biichuk - Full Stack Web Developer from Ukraine. Specialized in React, Next.js, TypeScript, Node.js, MongoDB, and modern web technologies. View my portfolio, projects, and experience."
+const siteUrl = "https://nikita-biichuks-portfolio.vercel.app"
 
-  if (
-    monthDifference < 0 ||
-    (monthDifference === 0 && today.getDate() < birthDateObj.getDate())
-  ) {
-    age--;
-  }
-  return age;
-};
-
-const age = calculateAge("2009-06-30");
-const desc = `A ${age}-year old web developer.`;
 export const metadata: Metadata = {
-  title: "Nikita Biichuk's Portfolio",
-  description: desc,
+  title: {
+    default: "Nikita Biichuk - Full Stack Web Developer Portfolio",
+    template: "%s | Nikita Biichuk"
+  },
+  description,
+  keywords: [
+    "Nikita Biichuk",
+    "Nikita Biichuk Portfolio",
+  ],
+  authors: [{ name: "Nikita Biichuk" }],
+  creator: "Nikita Biichuk",
+  publisher: "Nikita Biichuk",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/avatar.jpg",
+    apple: "/avatar.jpg",
   },
   openGraph: {
-    title: "Nikita Biichuk's Portfolio",
-    description: desc,
-    url: "https://nikita-biichuks-portfolio.vercel.app",
-    siteName: "Nikita Biichuk's Dev Portfolio",
+    title: "Nikita Biichuk - Full Stack Web Developer Portfolio",
+    description,
+    url: siteUrl,
+    siteName: "Nikita Biichuk's Portfolio",
     images: [
       {
         url: "/avatar.jpg",
-        alt: "Nikita Biichuk",
+        width: 1200,
+        height: 630,
+        alt: "Nikita Biichuk - Full Stack Web Developer",
       },
     ],
     type: "website",
     locale: "en_US",
   },
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   twitter: {
     card: "summary_large_image",
     site: "@nikitabiichuk",
     creator: "@nikitabiichuk",
-    title: "Nikita Biichuk's Dev Portfolio",
-    description: desc,
+    title: "Nikita Biichuk - Full Stack Web Developer",
+    description,
     images: ["/avatar.jpg"],
   },
-  keywords: ["Nikita Biichuk", "Nikita Biichuk's Portfolio"],
+  verification: {
+    // Add Google Search Console verification when available
+    // google: "your-google-verification-code",
+  },
 };
 
 export default function RootLayout({

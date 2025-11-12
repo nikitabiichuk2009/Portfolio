@@ -14,29 +14,13 @@ const Hero = () => {
       projectsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const calculateAge = (birthDate: string) => {
-    const today = new Date();
-    const birthDateObj = new Date(birthDate);
-    let age = today.getFullYear() - birthDateObj.getFullYear();
-    const monthDifference = today.getMonth() - birthDateObj.getMonth();
-
-    if (
-      monthDifference < 0 ||
-      (monthDifference === 0 && today.getDate() < birthDateObj.getDate())
-    ) {
-      age--;
-    }
-    return age;
-  };
-
-  const age = calculateAge("2009-06-30");
 
   const checkCv = () => {
     window.open("/NikitaBiichukResume.pdf", "_blank");
   };
 
   return (
-    <div className="pb-20 pt-36">
+    <header className="pb-20 pt-36">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32
@@ -62,20 +46,21 @@ const Hero = () => {
           <div className="size-44 md:size-48 lg:size-56 rounded-full overflow-hidden mb-6">
             <Image
               src="/avatar.jpg"
-              alt="Nikita Biichuk's photo"
+              alt="Nikita Biichuk - Full Stack Web Developer from Ukraine"
               width={250}
               height={250}
               objectFit="cover"
+              priority
             />
           </div>
           <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 text-center">
-            A {age}-year old boy who loves <Cover className="text-sm">coding</Cover>
+            Full Stack <Cover className="text-sm">Developer</Cover>
           </h2>
           <h1 className="text-3xl md:text-5xl text-center text-white font-bold">
             <span className="text-purple">Nikita Biichuk&apos;s</span> Portfolio
           </h1>
           <p className="text-center md:tracking-wider mb-4 text-lg font-normal text-white">
-            Hi! I am Nikita, a full stack web developer based in Ukraine.
+            Hi! I am Nikita, a full stack web developer based in Ukraine. Specialized in React, Next.js, TypeScript, Node.js, and modern web technologies.
           </p>
           <div className="flex gap-4">
             <SeeMyWorkButton
@@ -93,7 +78,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 export default Hero;
