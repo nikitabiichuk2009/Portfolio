@@ -67,19 +67,19 @@ export const courses: { id: number; title: string; url: string; imageSrc?: strin
     id: 1,
     title: "100 Days of Code: The Complete Python Pro Bootcamp for 2023",
     url: "https://www.udemy.com/course/100-days-of-code",
-    imageSrc: "/python-course-with-angela.png",
+    imageSrc: "/courses/python-course-with-angela.png",
   },
   {
     id: 2,
     title: "The Complete 2023 Web Development Bootcamp",
     url: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
-    imageSrc: "/web-dev-course-with-angela.png",
+    imageSrc: "/courses/web-dev-course-with-angela.png",
   },
   {
     id: 3,
     title: "React - The Complete Guide (incl Hooks, React Router, Redux)",
     url: "https://www.udemy.com/course/react-the-complete-guide-incl-redux",
-    imageSrc: "/react-course.png",
+    imageSrc: "/courses/react-course.png",
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ export const courses: { id: number; title: string; url: string; imageSrc?: strin
     id: 5,
     title: "Unity Platformer Course",
     url: "https://www.udemy.com/course/platformer-alexdev",
-    imageSrc: "/unity-platformer-course.png",
+    imageSrc: "/courses/unity-platformer-course.png",
   },
 ];
 export const projects = [
