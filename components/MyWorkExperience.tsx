@@ -30,6 +30,11 @@ const MyWorkExperience = () => {
                   <h1 className="text-start text-xl md:text-2xl font-bold cursor-text select-text">
                     {exp.title}
                   </h1>
+                  {exp.company && (
+                    <h2 className="text-start text-base md:text-lg font-semibold text-purple mt-1 cursor-text select-text">
+                      {exp.company}
+                    </h2>
+                  )}
                   <p className="text-start font-semibold text-white-100 mt-3 cursor-text select-text">
                     {exp.desc}
                   </p>
